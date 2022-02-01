@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Ajay-o-s</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <link rel="stylesheet" href="404.css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    p {
+       text-align: center;
+       font-size: 60px;
+       margin-top: 0px;
+     }
+    </style>
+    <body class="u-body u-image" style="background-position: 50% 50%; background-image: url(&quot;images/2236553.jpg&quot;);">
+</head>
+<body>
+  <section class="u-align-center-xs u-clearfix u-image u-parallax u-section-1" id="sec-ea9c" data-image-width="1600" data-image-height="1030">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1"><p id="time"></p></h1>
+      <br>
+      <p class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-not-found-message u-text-2">The page you are looking not published or under maintenance </p>
+      <a href="https://ak-hub-tools.github.io/" class="u-active-custom-color-1 u-black u-border-2 u-border-active-black u-border-black u-border-hover-black u-btn u-button-style u-hover-white u-text-active-black u-text-body-alt-color u-text-hover-black u-btn-1" href="index.html">Go to homepage</a>
+    </div>
+  </section>
+  <script>
+    var countDownDate = new Date("Jan 25, 2022 21:50:25").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("time").innerHTML = days + "d  -" + hours + "h :"
+      + minutes + "m :" + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("time").innerHTML = "Comming soon";
+        window.location.href = "Home.html";
+      }
+    }, 1000);
+    </script>
+
+</body>
+</html>
